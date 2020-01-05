@@ -65,7 +65,7 @@ end
 		end
 
 		def current_user
-			User.find(session[:id])
+			@user = User.find(session[:user_id])
 		end
 	end
 
