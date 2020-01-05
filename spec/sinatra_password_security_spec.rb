@@ -85,7 +85,7 @@ describe "App" do
       expect(page.body).to include("Houston, We Have a Problem")
     end
   end
-
+  
   describe "GET '/logout'" do 
     it 'clears the session hash and redirects to home page' do 
       user = User.create(:username => "student1", :password => "test")
